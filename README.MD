@@ -20,34 +20,20 @@ This is the A.I. component of the Pet Monitor project. It is responsible for des
     ```bash
     pip install -r requirements.txt
     ```
-3. Run the script to describe the model:
-    ```bash
-    python src/describe_model.py
-    ```
-4. Run the script to train the model:
+3. Run the script to train the model:
     ```bash
     python src/train_model.py
-    ```
-5. Run the script to run the model:
-    ```bash
-    python src/run_model.py
     ```
 
 ## Dataset
 
-The dataset contains images at 800x600 resolution of pets (different individuals, not breed), with the following classes:
+The dataset contains 278 files belonging to 5 classes at 800x600 resolution of pets (different individuals, not breed), with the following classes:
 
 - batima
 - botinha
-- dontcare
 - linco
 - nico
 - peto
-
-In a future implementation we intend to procedurally generate the model architecture based on the dataset, but for now we will use a fixed architecture.
-
-The don't care class is used to represent images that do not contain pets or pets that are not eating (interacting with the device).
-This class is used to filter out events that do not interest the user on the mobile app.
 
 ### Structure
 
@@ -67,5 +53,3 @@ data
 │   ├── ...
 │   └── 71d5d8bf- ... -ff89afc8374a.jpg
 ```
-
-
